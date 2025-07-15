@@ -35,7 +35,32 @@ void setup() {
    break;
   }
   Serial.print("El dia es " + nombreDia);
+
+
+int nota = 7;
+String calif = "";
+
+switch (nota) {
+case 1:
+case 2:
+case 3:
+case 4:
+  calif = "SUSPENSO";
+  break;
+case 5 ... 6 :
+ calif = "APROBADO";
+ break;
+case 7 ... 8:
+ calif = "NOTABLE";
+ break;
+default:
+ calif = "SOBRESALINTE";
+ break;
+ }
+Serial.println("La calificación es " + calif);
+
 }
+
 
 void loop() {
   // put your main code here, to run repeatedly:
