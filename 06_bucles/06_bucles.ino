@@ -31,7 +31,7 @@ void setup()
 
  // Bucles en dos dimensiones
  String salida ="";
-
+ /*
  for(int fila = 0; fila < 10; fila ++)
   {
    for(int col = 0; col < 10; col ++)
@@ -42,9 +42,41 @@ void setup()
     //Serial.print("\n");
     salida +="\n";
   }
-  Serial.print(salida);
-}
+  Serial.println(salida);
 
+  */
+
+ //Bucles infinitos
+ //Forma de salir de un bucle BREAK
+
+  int limite = 10;
+  int contador = 0;
+ for(;;)
+  {
+    if (contador == limite)
+    {
+      break;
+    }
+   Serial.print("Infinito..");
+   Serial.println(contador);
+   contador ++;
+  } 
+
+ 
+ //Bucles while
+ //se ejecuta mientras una condición sea vedadera
+contador = 0;
+ while (contador < limite)
+ {
+   Serial.print ("While: ");
+   Serial.println(contador);
+   contador ++;
+ }
+
+
+
+
+}
 
 void loop() 
 {
