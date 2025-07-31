@@ -9,7 +9,6 @@
 
 int brujula[] = {NORTE, SUR, ESTE, OESTE};
 
-
 int cero_x = 1922;
 int cero_y = 1813;
 
